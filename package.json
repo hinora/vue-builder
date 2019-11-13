@@ -1,0 +1,25 @@
+{
+    "name": "add-face",
+    "version": "1.0.0",
+    "scripts": {
+        "serve": "vue-cli-service serve --proxy 127.0.0.1:8000",
+        "build": "vue-cli-service build",
+        "build-cli": "vue-cli-service build  --dest test --name my-lib --no-unsafe-inline --target lib  ./src/index.js",
+        "lint": "vue-cli-service lint"
+    },
+    "peerDependencies": {
+        "vue": "^2.6.10"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^3.11.0",
+        "@vue/cli-plugin-eslint": "^3.11.0",
+        "@vue/cli-service": "^3.11.0",
+        "node-sass": "^4.12.0",
+        "sass-loader": "^8.0.0",
+        "vue": "^2.6.10",
+        "vue-template-compiler": "^2.6.10"
+    },
+    "dependencies": {
+        "bootstrap": "^4.3.1"
+    }
+}
