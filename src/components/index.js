@@ -1,5 +1,5 @@
-import AddFace from './AddFace.vue'
+import TestComponent from './TestComponent.vue'
 
 export {
-    AddFace,
+    TestComponent,
 }

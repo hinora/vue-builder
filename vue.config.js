@@ -1,5 +1,5 @@
-let component_name='add-face';
-let out_dir='../../../public_html/assets/vue/add-face/';
+let component_name='test-component';
+let out_dir='output/';
 
 if (process.env.NODE_ENV == 'production') {
     module.exports = {
