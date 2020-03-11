@@ -1,4 +1,4 @@
-# Vue component builder QCI-Core
+# Vue component builder
 ## 1. Cách thêm một component
 - B1: Tạo một folder chứa component trong thư mục `` src/components``
 - B2: Tạo file main cho component đó trong folder vừa tạo, file vừa tạo phải trùng với tên folder, (quy ước đặt tên folder và file main component là luôn phải viết hoa chữ cái đầu, viết liền không dấu)
