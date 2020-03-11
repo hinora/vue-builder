@@ -1,3 +1,4 @@
 node_modules
-vua-table   
-package-lock.json
+src/main.js
+src/components/index.js
+example/dist
