@@ -1,29 +1,29 @@
 # Vue component builder
-## 1. Cách thêm một component
-- B1: Tạo một folder chứa component trong thư mục `` src/components``
-- B2: Tạo file main cho component đó trong folder vừa tạo, file vừa tạo phải trùng với tên folder, (quy ước đặt tên folder và file main component là luôn phải viết hoa chữ cái đầu, viết liền không dấu)
-- B3: Tạo file ``Dev.vue`` trong folder vừa tạo
-## 2. Chạy chế độ developer để dev component vừa tạo
-- Chạy ``npm run serve -- --c:TenComponent`` với TenComponent là component muốn chạy developer
-## 3. Build component
-- Chạy ``npm run build``
-- Để bỏ qua các component không muốn build. vô file vue.config.js. Thêm tên component đó vào mảng breakComponent
+## 1. How to add a component
+- B1: Create a folder containing components in the folder `` src/components``
+- B2: Create a main file for that component in the newly created folder, the newly created file must match the folder name, (the convention for naming the folder and the main component file is to always capitalize the first letter, write immediately without accents)
+- B3: Create file ``Dev.vue`` in the newly created folder
+## 2. Run developer mode to dev component just created
+- Run ```npm run serve -- --c:ComponentName``` with ```ComponentName``` as the component you want to run developer
+## 3. Build components
+- Run ``npm run build``
+- To ignore components that do not want to build. go to vue.config.js file. Add that component name to breakComponent . array
 ## 4. File Dev.vue
-- import các file build giao diện hoặc test nhằm hỗ trợ cho việc developer component ở đây. Các file import này sẽ không được build ra khi ta build component
-- Ví dụ: Component đang build sử dụng bootstrap. Ở chế độ developer chúng ta cần import bootstrap vào để tạo giao diện. nhưng chúng ta lại không cần import bootstrap khi build ra sản phẩm vì trong dự án đã có bootstrap. Để làm được điều này chúng ta sẽ import bootstrap ở trong component Dev. Tất cả những thứ được import và link trong Dev sẽ không được build ra sản phẩm.
-## 5. Sử dụng component vừa build
-- VD: ta có một component được đặt tên là ``ComponentA``. Sau khi build để sử dụng nó thì chỉ cần viết như sau
+- import interface build or test files to support the developer component here. These import files will not be built when we build the component
+- Example: Component is building using bootstrap. In developer mode we need to import bootstrap to create the interface. but we do not need to import bootstrap when building the product because the project already has bootstrap. To do this we will import bootstrap in the Dev component. Everything that is imported and linked in Dev will not be built into the product.
+## 5. Use the component just built
+- For example, we have a component named ``ComponentA``. After building to use it just write the following
 ```html
-<div  id="id">
-	<component-a></component-a>
+<div id="id">
+<component-a></component-a>
 </div>
 <script>
-new  Vue({
-	el: "#id"
+new Vue({
+el: "#id"
 });
 </script>
 ```
-## 6. Chú ý
-- Tên component và tên folder chứa component phải đặt tên theo quy chuẩn của vue. [tham khảo](https://vuejs.org/v2/style-guide/)
-- Tất cả các file của component đang build phải nằm trong thư mục của nó
-- Khi install thêm các component hoặc thư viện ngoài cần kiểm tra trong packege.json xem đã có chưa để tránh việc xung đột phiên bản.
+## 6. Attention
+- The name of the component and the name of the folder containing the component must be named according to vue's standards. [reference](https://vuejs.org/v2/style-guide/)
+- All files of the component under construction must be in its directory
+- When installing additional components or external libraries, you need to check in packege.json to see if they are available to avoid version conflicts.
