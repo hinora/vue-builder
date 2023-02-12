@@ -1,8 +1,8 @@
 # Vue component builder
 ## 1. How to add a component
-- B1: Create a folder containing components in the folder `` src/components``
-- B2: Create a main file for that component in the newly created folder, the newly created file must match the folder name, (the convention for naming the folder and the main component file is to always capitalize the first letter, write immediately without accents)
-- B3: Create file ``Dev.vue`` in the newly created folder
+- Step 1: Create a folder containing components in the folder `` src/components``
+- Step 2: Create a main file for that component in the newly created folder, the newly created file must match the folder name, (the convention for naming the folder and the main component file is to always capitalize the first letter, write immediately without accents)
+- Step 3: Create file ``Dev.vue`` in the newly created folder
 ## 2. Run developer mode to dev component just created
 - Run ```npm run serve -- --c:ComponentName``` with ```ComponentName``` as the component you want to run developer
 ## 3. Build components
